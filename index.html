@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeFlow Connect - Blood Donation Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/d1d5db/374151?text=Hospital+Corridor');
+            background-size: cover;
+            background-position: center;
+        }
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-red-600 flex items-center">
+                <i class="fas fa-heartbeat text-3xl mr-2"></i>
+                LifeFlow Connect
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-red-600">Features</a>
+                <a href="#compatibility" class="text-gray-600 hover:text-red-600">Compatibility</a>
+                <a href="#team" class="text-gray-600 hover:text-red-600">About Us</a>
+                <a href="login.php" class="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-600 transition duration-300">Login / Register</a>
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-32">
+        <div class="container mx-auto text-center px-6">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">Your Drop of Blood Can Save a Life</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Join our community of heroes. Find available blood units, request for emergencies, or schedule a donation today. Simple, fast, and life-saving.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="register.php?type=donor" class="cta-button bg-red-600 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg">Become a Donor</a>
+                <a href="requests.php" class="cta-button bg-white text-red-600 text-lg font-semibold py-3 px-8 rounded-full shadow-lg">Request Blood</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="stat-card bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <div class="text-red-500 text-5xl mb-4"><i class="fas fa-users"></i></div>
+                    <h3 class="text-4xl font-bold text-gray-800">10,000+</h3>
+                    <p class="text-gray-500 mt-2">Active Donors</p>
+                </div>
+                <div class="stat-card bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <div class="text-red-500 text-5xl mb-4"><i class="fas fa-hand-holding-medical"></i></div>
+                    <h3 class="text-4xl font-bold text-gray-800">50,000+</h3>
+                    <p class="text-gray-500 mt-2">Lives Saved</p>
+                </div>
+                <div class="stat-card bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <div class="text-red-500 text-5xl mb-4"><i class="fas fa-hospital"></i></div>
+                    <h3 class="text-4xl font-bold text-gray-800">150+</h3>
+                    <p class="text-gray-500 mt-2">Partner Hospitals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">A Complete Ecosystem for Blood Management</h2>
+            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">We provide dedicated dashboards and features for every stakeholder in the process.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-user-shield text-red-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Admin Dashboard</h3>
+                    <p class="text-gray-600">Oversee all operations, manage users, and view system-wide analytics.</p>
+                </div>
+                <!-- Feature Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-clinic-medical text-red-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Hospital Portal</h3>
+                    <p class="text-gray-600">Manage blood inventory, respond to requests, and organize donation camps.</p>
+                </div>
+                <!-- Feature Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-tint text-red-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Donor & Receiver Hub</h3>
+                    <p class="text-gray-600">Find blood, schedule donations, and track your life-saving contributions.</p>
+                </div>
+                <!-- Feature Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-ambulance text-red-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Ambulance Tracking</h3>
+                    <p class="text-gray-600">Locate and dispatch the nearest ambulance for emergency transport.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blood Compatibility Chart -->
+    <section id="compatibility" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Blood Type Compatibility</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-md mx-auto max-w-4xl">
+                    <thead class="bg-red-500 text-white">
+                        <tr>
+                            <th class="py-3 px-4 border-b">Blood Type</th>
+                            <th class="py-3 px-4 border-b">Can Donate To</th>
+                            <th class="py-3 px-4 border-b">Can Receive From</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b font-medium text-red-600">A+</td>
+                            <td class="py-3 px-4 border-b">A+, AB+</td>
+                            <td class="py-3 px-4 border-b">A+, A-, O+, O-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b font-medium text-red-600">O+</td>
+                            <td class="py-3 px-4 border-b">O+, A+, B+, AB+</td>
+                            <td class="py-3 px-4 border-b">O+, O-</td>
+                        </tr>
+                         <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b font-medium text-red-600">B+</td>
+                            <td class="py-3 px-4 border-b">B+, AB+</td>
+                            <td class="py-3 px-4 border-b">B+, B-, O+, O-</td>
+                        </tr>
+                         <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b font-medium text-red-600">AB+</td>
+                            <td class="py-3 px-4 border-b">AB+</td>
+                            <td class="py-3 px-4 border-b">Everyone (Universal Recipient)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b font-medium text-red-600">A-</td>
+                            <td class="py-3 px-4 border-b">A+, A-, AB+, AB-</td>
+                            <td class="py-3 px-4 border-b">A-, O-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b font-medium text-red-600">O-</td>
+                            <td class="py-3 px-4 border-b">Everyone (Universal Donor)</td>
+                            <td class="py-3 px-4 border-b">O-</td>
+                        </tr>
+                         <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b font-medium text-red-600">B-</td>
+                            <td class="py-3 px-4 border-b">B+, B-, AB+, AB-</td>
+                            <td class="py-3 px-4 border-b">B-, O-</td>
+                        </tr>
+                         <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b font-medium text-red-600">AB-</td>
+                            <td class="py-3 px-4 border-b">AB+, AB-</td>
+                            <td class="py-3 px-4 border-b">AB-, A-, B-, O-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Meet Our Team</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Team Member -->
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/e2e8f0/334155?text=Team" class="w-32 h-32 rounded-full mb-4 shadow-lg" alt="Team Member 1">
+                    <h4 class="text-xl font-semibold text-gray-800">Alex Johnson</h4>
+                    <p class="text-gray-500">Project Lead</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/e2e8f0/334155?text=Team" class="w-32 h-32 rounded-full mb-4 shadow-lg" alt="Team Member 2">
+                    <h4 class="text-xl font-semibold text-gray-800">Maria Garcia</h4>
+                    <p class="text-gray-500">Lead Developer</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/e2e8f0/334155?text=Team" class="w-32 h-32 rounded-full mb-4 shadow-lg" alt="Team Member 3">
+                    <h4 class="text-xl font-semibold text-gray-800">Chris Lee</h4>
+                    <p class="text-gray-500">UI/UX Designer</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/e2e8f0/334155?text=Team" class="w-32 h-32 rounded-full mb-4 shadow-lg" alt="Team Member 4">
+                    <h4 class="text-xl font-semibold text-gray-800">Patricia Williams</h4>
+                    <p class="text-gray-500">Database Architect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 LifeFlow Connect. All Rights Reserved. Saving lives, one drop at a time.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
