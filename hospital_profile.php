@@ -86,7 +86,7 @@ if($stmt_details = $conn->prepare($sql_details)){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Profile - LifeFlow Connect</title>
+    <title>Hospital Profile - LifeLink Connect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -99,7 +99,7 @@ if($stmt_details = $conn->prepare($sql_details)){
         <div class="bg-gray-800 text-white w-64 p-6 space-y-6">
             <a href="index.html" class="text-2xl font-bold text-white flex items-center mb-10">
                 <i class="fas fa-hospital-symbol text-3xl mr-2 text-red-500"></i>
-                LifeFlow
+                LifeLink
             </a>
             <nav>
                 <a href="hospital_dashboard.php" class="flex items-center p-3 text-lg hover:bg-gray-700 rounded-lg">

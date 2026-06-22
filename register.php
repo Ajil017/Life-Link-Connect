@@ -104,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - LifeFlow Connect</title>
+    <title>Register - LifeLink Connect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="text-center">
                 <a href="index.html" class="inline-flex items-center justify-center text-2xl font-bold text-gray-800">
                     <i class="fas fa-heartbeat text-3xl mr-2 text-red-500"></i>
-                    LifeFlow Connect
+                    LifeLink Connect
                 </a>
                 <p class="mt-2 text-sm text-gray-600">Create your account to save lives</p>
             </div>

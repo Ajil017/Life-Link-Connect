@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - LifeFlow Connect</title>
+    <title>Login - LifeLink Connect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="text-center mb-8">
             <a href="index.html" class="text-3xl font-bold text-red-600 flex items-center justify-center">
                 <i class="fas fa-heartbeat text-4xl mr-2"></i>
-                LifeFlow Connect
+                LifeLink Connect
             </a>
             <h2 class="text-2xl font-bold text-gray-800 mt-4">Welcome Back!</h2>
             <p class="text-gray-500">Sign in to continue to your dashboard.</p>

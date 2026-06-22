@@ -2,7 +2,7 @@
 -- Run this in phpMyAdmin after creating the tables with `database.sql`.
 
 INSERT INTO `users` (`full_name`, `email`, `password`, `phone`, `address`, `blood_group`, `user_type`, `points`) VALUES
-('Admin User', 'admin@lifeflow.com', '$2y$10$your_hashed_password_here', '1112223330', '1 Admin Way, Central City', 'O+', 'admin', 0),
+('Admin User', 'admin@LifeLink.com', '$2y$10$your_hashed_password_here', '1112223330', '1 Admin Way, Central City', 'O+', 'admin', 0),
 ('John Doe', 'john.d@example.com', '$2y$10$your_hashed_password_here', '9876543210', '123 Life St, Donorville', 'A+', 'donor', 50),
 ('Jane Smith', 'jane.s@example.com', '$2y$10$your_hashed_password_here', '8765432109', '456 Health Ave, Receiverton', 'B-', 'receiver', 0),
 ('Dr. Emily Carter', 'ecarter@cityhospital.com', '$2y$10$your_hashed_password_here', '7654321098', '789 Cure Blvd, Medicity', 'AB+', 'hospital_staff', 0),

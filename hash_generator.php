@@ -6,7 +6,7 @@ $new_password_to_hash = "admin123";
 
 // 2. Save this file.
 
-// 3. Open your browser and go to http://localhost/lifeflow-connect/hash_generator.php
+// 3. Open your browser and go to http://localhost/LifeLink-connect/hash_generator.php
 
 // 4. Copy the long string of text that appears on the screen. That is your new hashed password.
 
