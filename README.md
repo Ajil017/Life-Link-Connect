@@ -207,10 +207,6 @@ For support, email lifelinkconnect@example.com or open an issue in the GitHub re
 - Implement additional security measures for production deployment
 - Regularly update dependencies
 
-## 🌐 Live Demo
-
-A live demo of this project will be available soon at [demo.lifelinkconnect.com](https://demo.lifelinkconnect.com)
-
 ---
 
 **LifeLink Connect** - Saving lives, one drop at a time. ❤️
